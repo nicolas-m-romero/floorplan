@@ -1,0 +1,106 @@
+/* frontend/src/components/ui/Button.css */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Sizes ── */
+.btn--sm {
+  font-size: var(--type-body-xs);
+  padding: var(--space-2) var(--space-4);
+}
+
+.btn--md {
+  font-size: var(--type-body-sm);
+  padding: var(--space-3) var(--space-6);
+}
+
+.btn--lg {
+  font-size: var(--type-body-md);
+  padding: var(--space-4) var(--space-8);
+}
+
+/* ── Variants ── */
+.btn--primary {
+  color: var(--color-ground);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+}
+
+.btn--secondary {
+  color: var(--color-text-primary);
+  background: transparent;
+  border-color: var(--color-border-strong);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  border-color: var(--color-text-primary);
+}
+
+.btn--ghost {
+  color: var(--color-text-secondary);
+  background: transparent;
+  border-color: transparent;
+}
+
+.btn--ghost:hover:not(:disabled) {
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn--danger {
+  color: var(--color-text-primary);
+  background: transparent;
+  border-color: var(--color-error);
+}
+
+.btn--danger:hover:not(:disabled) {
+  background: var(--color-error);
+}
+
+/* ── Loading state ── */
+.btn--loading {
+  cursor: wait;
+}
+
+.btn__spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: btn-spin 0.6s linear infinite;
+  position: absolute;
+}
+
+.btn__label--hidden {
+  visibility: hidden;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}

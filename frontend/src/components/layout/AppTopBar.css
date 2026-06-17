@@ -1,0 +1,89 @@
+/* frontend/src/components/layout/AppTopBar.css */
+
+.app-topbar {
+  height: var(--topbar-height);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 0 var(--space-6);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  flex-shrink: 0;
+}
+
+.app-topbar__logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  letter-spacing: var(--ls-display);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.app-topbar__project {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-topbar__name {
+  font-family: var(--font-body);
+  font-size: var(--type-body-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-1) var(--space-2);
+  border-radius: 0;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.app-topbar__name:hover {
+  background: var(--color-border);
+}
+
+.app-topbar__name-form {
+  flex: 1;
+}
+
+.app-topbar__name-input {
+  font-family: var(--font-body);
+  font-size: var(--type-body-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background: var(--color-ground);
+  border: 1px solid var(--color-accent);
+  padding: var(--space-1) var(--space-2);
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+.app-topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.app-topbar__saving,
+.app-topbar__saved,
+.app-topbar__save-error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--type-body-xs);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+}
+
+.app-topbar__saving { color: var(--color-text-muted); }
+.app-topbar__saved  { color: var(--color-success); }
+.app-topbar__save-error { color: var(--color-error); }

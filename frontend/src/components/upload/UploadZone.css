@@ -1,0 +1,87 @@
+/* frontend/src/components/upload/UploadZone.css */
+
+.upload-zone-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.upload-zone {
+  border: 1px dashed var(--color-border-strong);
+  padding: var(--space-16) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease;
+  min-height: 200px;
+  justify-content: center;
+}
+
+.upload-zone:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-glow);
+}
+
+.upload-zone--dragging {
+  border-color: var(--color-accent);
+  background: var(--color-accent-glow);
+}
+
+.upload-zone--error {
+  border-color: var(--color-error);
+}
+
+.upload-zone__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.upload-zone__title {
+  font-size: var(--type-body-md);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.upload-zone__title--error {
+  color: var(--color-error);
+}
+
+.upload-zone__subtitle {
+  font-size: var(--type-body-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.upload-zone__spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-border-strong);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: btn-spin 0.6s linear infinite;
+}
+
+.upload-zone__cancel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--type-body-xs);
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+
+.upload-zone__cancel:hover {
+  color: var(--color-text-secondary);
+}

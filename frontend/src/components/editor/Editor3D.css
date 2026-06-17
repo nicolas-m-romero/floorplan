@@ -1,0 +1,9 @@
+/* frontend/src/components/editor/Editor3D.css */
+
+.editor-3d {
+  width: 100%;
+  height: 100%;
+  background: var(--color-ground);
+  position: relative;
+  overflow: hidden;
+}
