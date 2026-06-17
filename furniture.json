@@ -1,0 +1,829 @@
+{
+  "version": "1.0.0",
+  "notes": "All dimensions in centimeters. width_cm = X axis (left-right), depth_cm = Y axis (front-back), height_cm = Z axis (vertical). Dimensions represent common real-world sizes and are editable by the user after placement.",
+  "categories": [
+    {
+      "id": "living_room",
+      "label": "Living Room",
+      "items": [
+        {
+          "id": "sofa_2seat",
+          "label": "Sofa (2-Seat)",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 91.44,
+          "default_height_cm": 83.82,
+          "min_width_cm": 127.0,
+          "max_width_cm": 182.88,
+          "color_hex": "#64748B",
+          "tags": ["seating", "living_room"]
+        },
+        {
+          "id": "sofa_3seat",
+          "label": "Sofa (3-Seat)",
+          "default_width_cm": 228.6,
+          "default_depth_cm": 91.44,
+          "default_height_cm": 83.82,
+          "min_width_cm": 190.5,
+          "max_width_cm": 274.32,
+          "color_hex": "#64748B",
+          "tags": ["seating", "living_room"]
+        },
+        {
+          "id": "sofa_sectional",
+          "label": "Sectional Sofa",
+          "default_width_cm": 279.4,
+          "default_depth_cm": 165.1,
+          "default_height_cm": 83.82,
+          "min_width_cm": 228.6,
+          "max_width_cm": 365.76,
+          "color_hex": "#64748B",
+          "tags": ["seating", "living_room"]
+        },
+        {
+          "id": "loveseat",
+          "label": "Loveseat",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 83.82,
+          "default_height_cm": 83.82,
+          "min_width_cm": 121.92,
+          "max_width_cm": 182.88,
+          "color_hex": "#64748B",
+          "tags": ["seating", "living_room"]
+        },
+        {
+          "id": "armchair",
+          "label": "Armchair",
+          "default_width_cm": 83.82,
+          "default_depth_cm": 83.82,
+          "default_height_cm": 83.82,
+          "min_width_cm": 60.96,
+          "max_width_cm": 106.68,
+          "color_hex": "#64748B",
+          "tags": ["seating", "living_room"]
+        },
+        {
+          "id": "coffee_table_rect",
+          "label": "Coffee Table (Rectangular)",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 45.72,
+          "min_width_cm": 76.2,
+          "max_width_cm": 182.88,
+          "color_hex": "#92400E",
+          "tags": ["table", "living_room"]
+        },
+        {
+          "id": "coffee_table_round",
+          "label": "Coffee Table (Round)",
+          "default_width_cm": 91.44,
+          "default_depth_cm": 91.44,
+          "default_height_cm": 45.72,
+          "min_width_cm": 60.96,
+          "max_width_cm": 121.92,
+          "color_hex": "#92400E",
+          "tags": ["table", "living_room"]
+        },
+        {
+          "id": "side_table",
+          "label": "Side Table",
+          "default_width_cm": 55.88,
+          "default_depth_cm": 55.88,
+          "default_height_cm": 60.96,
+          "min_width_cm": 35.56,
+          "max_width_cm": 76.2,
+          "color_hex": "#92400E",
+          "tags": ["table", "living_room"]
+        },
+        {
+          "id": "tv_stand",
+          "label": "TV Stand",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 45.72,
+          "default_height_cm": 50.8,
+          "min_width_cm": 91.44,
+          "max_width_cm": 228.6,
+          "color_hex": "#374151",
+          "tags": ["storage", "living_room", "media"]
+        },
+        {
+          "id": "tv_wall_mounted",
+          "label": "TV (Wall Mounted)",
+          "default_width_cm": 139.7,
+          "default_depth_cm": 10.16,
+          "default_height_cm": 81.28,
+          "min_width_cm": 81.28,
+          "max_width_cm": 203.2,
+          "color_hex": "#111827",
+          "tags": ["media", "living_room", "wall_mounted"]
+        },
+        {
+          "id": "bookshelf_small",
+          "label": "Bookshelf (Small)",
+          "default_width_cm": 80.0,
+          "default_depth_cm": 30.0,
+          "default_height_cm": 120.0,
+          "min_width_cm": 60.0,
+          "max_width_cm": 100.0,
+          "color_hex": "#92400E",
+          "tags": ["storage", "living_room"]
+        },
+        {
+          "id": "bookshelf_large",
+          "label": "Bookshelf (Large)",
+          "default_width_cm": 120.0,
+          "default_depth_cm": 35.0,
+          "default_height_cm": 200.0,
+          "min_width_cm": 80.0,
+          "max_width_cm": 240.0,
+          "color_hex": "#92400E",
+          "tags": ["storage", "living_room"]
+        },
+        {
+          "id": "floor_lamp",
+          "label": "Floor Lamp",
+          "default_width_cm": 35.56,
+          "default_depth_cm": 35.56,
+          "default_height_cm": 170.18,
+          "min_width_cm": 25.4,
+          "max_width_cm": 50.8,
+          "color_hex": "#D1D5DB",
+          "tags": ["lighting", "living_room"]
+        },
+        {
+          "id": "rug_small",
+          "label": "Area Rug (Small)",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 243.84,
+          "default_height_cm": 1.5,
+          "min_width_cm": 121.92,
+          "max_width_cm": 182.88,
+          "color_hex": "#9CA3AF",
+          "tags": ["decor", "living_room", "rug"]
+        },
+        {
+          "id": "rug_large",
+          "label": "Area Rug (Large)",
+          "default_width_cm": 243.84,
+          "default_depth_cm": 304.8,
+          "default_height_cm": 1.5,
+          "min_width_cm": 182.88,
+          "max_width_cm": 365.76,
+          "color_hex": "#9CA3AF",
+          "tags": ["decor", "living_room", "rug"]
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "label": "Bedroom",
+      "items": [
+        {
+          "id": "bed_twin",
+          "label": "Bed (Twin / Single)",
+          "default_width_cm": 99.06,
+          "default_depth_cm": 190.5,
+          "default_height_cm": 60.96,
+          "min_width_cm": 99.06,
+          "max_width_cm": 99.06,
+          "color_hex": "#475569",
+          "tags": ["sleeping", "bedroom"]
+        },
+        {
+          "id": "bed_full",
+          "label": "Bed (Full / Double)",
+          "default_width_cm": 137.16,
+          "default_depth_cm": 190.5,
+          "default_height_cm": 60.96,
+          "min_width_cm": 137.16,
+          "max_width_cm": 137.16,
+          "color_hex": "#475569",
+          "tags": ["sleeping", "bedroom"]
+        },
+        {
+          "id": "bed_queen",
+          "label": "Bed (Queen)",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 203.2,
+          "default_height_cm": 60.96,
+          "min_width_cm": 152.4,
+          "max_width_cm": 152.4,
+          "color_hex": "#475569",
+          "tags": ["sleeping", "bedroom"]
+        },
+        {
+          "id": "bed_king",
+          "label": "Bed (King)",
+          "default_width_cm": 193.04,
+          "default_depth_cm": 203.2,
+          "default_height_cm": 60.96,
+          "min_width_cm": 193.04,
+          "max_width_cm": 193.04,
+          "color_hex": "#475569",
+          "tags": ["sleeping", "bedroom"]
+        },
+        {
+          "id": "bed_california_king",
+          "label": "Bed (California King)",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 213.36,
+          "default_height_cm": 60.96,
+          "min_width_cm": 182.88,
+          "max_width_cm": 182.88,
+          "color_hex": "#475569",
+          "tags": ["sleeping", "bedroom"]
+        },
+        {
+          "id": "bunk_bed",
+          "label": "Bunk Bed",
+          "default_width_cm": 99.06,
+          "default_depth_cm": 203.2,
+          "default_height_cm": 165.1,
+          "min_width_cm": 99.06,
+          "max_width_cm": 137.16,
+          "color_hex": "#475569",
+          "tags": ["sleeping", "bedroom", "stackable"]
+        },
+        {
+          "id": "nightstand",
+          "label": "Nightstand",
+          "default_width_cm": 50.8,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 60.96,
+          "min_width_cm": 35.56,
+          "max_width_cm": 76.2,
+          "color_hex": "#92400E",
+          "tags": ["storage", "bedroom"]
+        },
+        {
+          "id": "dresser",
+          "label": "Dresser",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 45.72,
+          "default_height_cm": 83.82,
+          "min_width_cm": 76.2,
+          "max_width_cm": 182.88,
+          "color_hex": "#92400E",
+          "tags": ["storage", "bedroom"]
+        },
+        {
+          "id": "chest_of_drawers",
+          "label": "Chest of Drawers",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 45.72,
+          "default_height_cm": 121.92,
+          "min_width_cm": 50.8,
+          "max_width_cm": 106.68,
+          "color_hex": "#92400E",
+          "tags": ["storage", "bedroom"]
+        },
+        {
+          "id": "wardrobe_single",
+          "label": "Wardrobe (Single)",
+          "default_width_cm": 91.44,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 200.66,
+          "min_width_cm": 60.96,
+          "max_width_cm": 121.92,
+          "color_hex": "#374151",
+          "tags": ["storage", "bedroom"]
+        },
+        {
+          "id": "wardrobe_double",
+          "label": "Wardrobe (Double)",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 200.66,
+          "min_width_cm": 152.4,
+          "max_width_cm": 243.84,
+          "color_hex": "#374151",
+          "tags": ["storage", "bedroom"]
+        },
+        {
+          "id": "vanity",
+          "label": "Vanity / Dressing Table",
+          "default_width_cm": 106.68,
+          "default_depth_cm": 45.72,
+          "default_height_cm": 76.2,
+          "min_width_cm": 76.2,
+          "max_width_cm": 152.4,
+          "color_hex": "#92400E",
+          "tags": ["storage", "bedroom"]
+        },
+        {
+          "id": "bedroom_bench",
+          "label": "Bedroom Bench",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 50.8,
+          "min_width_cm": 76.2,
+          "max_width_cm": 152.4,
+          "color_hex": "#64748B",
+          "tags": ["seating", "bedroom"]
+        }
+      ]
+    },
+    {
+      "id": "dining",
+      "label": "Dining",
+      "items": [
+        {
+          "id": "dining_table_2seat",
+          "label": "Dining Table (2-Seat)",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 76.2,
+          "default_height_cm": 76.2,
+          "min_width_cm": 60.96,
+          "max_width_cm": 91.44,
+          "color_hex": "#92400E",
+          "tags": ["table", "dining"]
+        },
+        {
+          "id": "dining_table_4seat",
+          "label": "Dining Table (4-Seat)",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 76.2,
+          "default_height_cm": 76.2,
+          "min_width_cm": 91.44,
+          "max_width_cm": 152.4,
+          "color_hex": "#92400E",
+          "tags": ["table", "dining"]
+        },
+        {
+          "id": "dining_table_6seat",
+          "label": "Dining Table (6-Seat)",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 91.44,
+          "default_height_cm": 76.2,
+          "min_width_cm": 152.4,
+          "max_width_cm": 243.84,
+          "color_hex": "#92400E",
+          "tags": ["table", "dining"]
+        },
+        {
+          "id": "dining_table_8seat",
+          "label": "Dining Table (8-Seat)",
+          "default_width_cm": 243.84,
+          "default_depth_cm": 106.68,
+          "default_height_cm": 76.2,
+          "min_width_cm": 182.88,
+          "max_width_cm": 304.8,
+          "color_hex": "#92400E",
+          "tags": ["table", "dining"]
+        },
+        {
+          "id": "dining_table_round",
+          "label": "Dining Table (Round, 4-Seat)",
+          "default_width_cm": 106.68,
+          "default_depth_cm": 106.68,
+          "default_height_cm": 76.2,
+          "min_width_cm": 76.2,
+          "max_width_cm": 152.4,
+          "color_hex": "#92400E",
+          "tags": ["table", "dining"]
+        },
+        {
+          "id": "dining_chair",
+          "label": "Dining Chair",
+          "default_width_cm": 45.72,
+          "default_depth_cm": 50.8,
+          "default_height_cm": 91.44,
+          "min_width_cm": 38.1,
+          "max_width_cm": 55.88,
+          "color_hex": "#374151",
+          "tags": ["seating", "dining"]
+        },
+        {
+          "id": "bar_stool",
+          "label": "Bar Stool",
+          "default_width_cm": 40.64,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 76.2,
+          "min_width_cm": 30.48,
+          "max_width_cm": 50.8,
+          "color_hex": "#374151",
+          "tags": ["seating", "dining"]
+        },
+        {
+          "id": "buffet_sideboard",
+          "label": "Buffet / Sideboard",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 45.72,
+          "default_height_cm": 83.82,
+          "min_width_cm": 91.44,
+          "max_width_cm": 228.6,
+          "color_hex": "#92400E",
+          "tags": ["storage", "dining"]
+        },
+        {
+          "id": "bar_cart",
+          "label": "Bar Cart",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 91.44,
+          "min_width_cm": 45.72,
+          "max_width_cm": 76.2,
+          "color_hex": "#D1D5DB",
+          "tags": ["storage", "dining"]
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "label": "Office",
+      "items": [
+        {
+          "id": "desk_standard",
+          "label": "Desk (Standard)",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 76.2,
+          "min_width_cm": 91.44,
+          "max_width_cm": 182.88,
+          "color_hex": "#374151",
+          "tags": ["work", "office"]
+        },
+        {
+          "id": "desk_l_shape",
+          "label": "Desk (L-Shape)",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 152.4,
+          "default_height_cm": 76.2,
+          "min_width_cm": 152.4,
+          "max_width_cm": 243.84,
+          "color_hex": "#374151",
+          "tags": ["work", "office"]
+        },
+        {
+          "id": "desk_standing",
+          "label": "Standing Desk",
+          "default_width_cm": 152.4,
+          "default_depth_cm": 76.2,
+          "default_height_cm": 120.0,
+          "min_width_cm": 121.92,
+          "max_width_cm": 182.88,
+          "color_hex": "#374151",
+          "tags": ["work", "office"]
+        },
+        {
+          "id": "office_chair",
+          "label": "Office Chair",
+          "default_width_cm": 66.04,
+          "default_depth_cm": 66.04,
+          "default_height_cm": 121.92,
+          "min_width_cm": 55.88,
+          "max_width_cm": 76.2,
+          "color_hex": "#111827",
+          "tags": ["seating", "office"]
+        },
+        {
+          "id": "filing_cabinet_2drawer",
+          "label": "Filing Cabinet (2-Drawer)",
+          "default_width_cm": 45.72,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 71.12,
+          "min_width_cm": 35.56,
+          "max_width_cm": 55.88,
+          "color_hex": "#6B7280",
+          "tags": ["storage", "office"]
+        },
+        {
+          "id": "filing_cabinet_4drawer",
+          "label": "Filing Cabinet (4-Drawer)",
+          "default_width_cm": 45.72,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 132.08,
+          "min_width_cm": 35.56,
+          "max_width_cm": 55.88,
+          "color_hex": "#6B7280",
+          "tags": ["storage", "office"]
+        },
+        {
+          "id": "shelving_unit",
+          "label": "Shelving Unit",
+          "default_width_cm": 91.44,
+          "default_depth_cm": 30.48,
+          "default_height_cm": 182.88,
+          "min_width_cm": 60.96,
+          "max_width_cm": 182.88,
+          "color_hex": "#92400E",
+          "tags": ["storage", "office"]
+        },
+        {
+          "id": "printer_stand",
+          "label": "Printer / Scanner Stand",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 45.72,
+          "default_height_cm": 76.2,
+          "min_width_cm": 45.72,
+          "max_width_cm": 91.44,
+          "color_hex": "#6B7280",
+          "tags": ["work", "office"]
+        },
+        {
+          "id": "monitor_arm_desk",
+          "label": "Monitor (on desk)",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 20.32,
+          "default_height_cm": 45.72,
+          "min_width_cm": 40.64,
+          "max_width_cm": 91.44,
+          "color_hex": "#111827",
+          "tags": ["work", "office", "tech"]
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen",
+      "items": [
+        {
+          "id": "refrigerator_standard",
+          "label": "Refrigerator (Standard)",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 76.2,
+          "default_height_cm": 177.8,
+          "min_width_cm": 60.96,
+          "max_width_cm": 91.44,
+          "color_hex": "#D1D5DB",
+          "tags": ["appliance", "kitchen"]
+        },
+        {
+          "id": "refrigerator_french_door",
+          "label": "Refrigerator (French Door)",
+          "default_width_cm": 91.44,
+          "default_depth_cm": 83.82,
+          "default_height_cm": 177.8,
+          "min_width_cm": 83.82,
+          "max_width_cm": 106.68,
+          "color_hex": "#D1D5DB",
+          "tags": ["appliance", "kitchen"]
+        },
+        {
+          "id": "dishwasher",
+          "label": "Dishwasher",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 85.09,
+          "min_width_cm": 45.72,
+          "max_width_cm": 60.96,
+          "color_hex": "#D1D5DB",
+          "tags": ["appliance", "kitchen"]
+        },
+        {
+          "id": "stove_range",
+          "label": "Stove / Range",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 88.9,
+          "min_width_cm": 60.96,
+          "max_width_cm": 91.44,
+          "color_hex": "#374151",
+          "tags": ["appliance", "kitchen"]
+        },
+        {
+          "id": "microwave_countertop",
+          "label": "Microwave (Countertop)",
+          "default_width_cm": 55.88,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 30.48,
+          "min_width_cm": 45.72,
+          "max_width_cm": 66.04,
+          "color_hex": "#374151",
+          "tags": ["appliance", "kitchen"]
+        },
+        {
+          "id": "kitchen_island",
+          "label": "Kitchen Island",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 76.2,
+          "default_height_cm": 91.44,
+          "min_width_cm": 76.2,
+          "max_width_cm": 243.84,
+          "color_hex": "#D1D5DB",
+          "tags": ["work_surface", "kitchen"]
+        },
+        {
+          "id": "kitchen_cart",
+          "label": "Kitchen Cart",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 50.8,
+          "default_height_cm": 88.9,
+          "min_width_cm": 50.8,
+          "max_width_cm": 106.68,
+          "color_hex": "#92400E",
+          "tags": ["storage", "kitchen"]
+        },
+        {
+          "id": "washer",
+          "label": "Washing Machine",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 85.09,
+          "min_width_cm": 60.96,
+          "max_width_cm": 60.96,
+          "color_hex": "#D1D5DB",
+          "tags": ["appliance", "laundry"]
+        },
+        {
+          "id": "dryer",
+          "label": "Dryer",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 85.09,
+          "min_width_cm": 60.96,
+          "max_width_cm": 60.96,
+          "color_hex": "#D1D5DB",
+          "tags": ["appliance", "laundry"]
+        },
+        {
+          "id": "washer_dryer_stacked",
+          "label": "Washer + Dryer (Stacked)",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 170.18,
+          "min_width_cm": 60.96,
+          "max_width_cm": 60.96,
+          "color_hex": "#D1D5DB",
+          "tags": ["appliance", "laundry", "stackable"]
+        }
+      ]
+    },
+    {
+      "id": "outdoor",
+      "label": "Outdoor / Balcony",
+      "items": [
+        {
+          "id": "outdoor_table_small",
+          "label": "Outdoor Table (Small)",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 76.2,
+          "default_height_cm": 73.66,
+          "min_width_cm": 60.96,
+          "max_width_cm": 121.92,
+          "color_hex": "#4B5563",
+          "tags": ["table", "outdoor"]
+        },
+        {
+          "id": "outdoor_table_large",
+          "label": "Outdoor Table (Large)",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 91.44,
+          "default_height_cm": 73.66,
+          "min_width_cm": 121.92,
+          "max_width_cm": 243.84,
+          "color_hex": "#4B5563",
+          "tags": ["table", "outdoor"]
+        },
+        {
+          "id": "outdoor_chair",
+          "label": "Outdoor Chair",
+          "default_width_cm": 60.96,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 83.82,
+          "min_width_cm": 50.8,
+          "max_width_cm": 76.2,
+          "color_hex": "#4B5563",
+          "tags": ["seating", "outdoor"]
+        },
+        {
+          "id": "outdoor_sofa",
+          "label": "Outdoor Sofa",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 83.82,
+          "default_height_cm": 73.66,
+          "min_width_cm": 121.92,
+          "max_width_cm": 243.84,
+          "color_hex": "#4B5563",
+          "tags": ["seating", "outdoor"]
+        },
+        {
+          "id": "lounge_chair",
+          "label": "Lounge Chair / Sunlounger",
+          "default_width_cm": 71.12,
+          "default_depth_cm": 182.88,
+          "default_height_cm": 40.64,
+          "min_width_cm": 60.96,
+          "max_width_cm": 83.82,
+          "color_hex": "#4B5563",
+          "tags": ["seating", "outdoor"]
+        },
+        {
+          "id": "planter_box_small",
+          "label": "Planter Box (Small)",
+          "default_width_cm": 40.64,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 40.64,
+          "min_width_cm": 25.4,
+          "max_width_cm": 60.96,
+          "color_hex": "#78350F",
+          "tags": ["decor", "outdoor", "planter"]
+        },
+        {
+          "id": "planter_box_large",
+          "label": "Planter Box (Large)",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 50.8,
+          "min_width_cm": 76.2,
+          "max_width_cm": 182.88,
+          "color_hex": "#78350F",
+          "tags": ["decor", "outdoor", "planter"]
+        },
+        {
+          "id": "outdoor_umbrella",
+          "label": "Patio Umbrella",
+          "default_width_cm": 243.84,
+          "default_depth_cm": 243.84,
+          "default_height_cm": 243.84,
+          "min_width_cm": 182.88,
+          "max_width_cm": 304.8,
+          "color_hex": "#9CA3AF",
+          "tags": ["decor", "outdoor"]
+        },
+        {
+          "id": "bbq_grill",
+          "label": "BBQ Grill",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 121.92,
+          "min_width_cm": 76.2,
+          "max_width_cm": 152.4,
+          "color_hex": "#111827",
+          "tags": ["appliance", "outdoor"]
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "label": "Storage & Utility",
+      "items": [
+        {
+          "id": "storage_unit_small",
+          "label": "Storage Unit (Small)",
+          "default_width_cm": 76.2,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 91.44,
+          "min_width_cm": 45.72,
+          "max_width_cm": 121.92,
+          "color_hex": "#374151",
+          "tags": ["storage"]
+        },
+        {
+          "id": "storage_unit_large",
+          "label": "Storage Unit (Large)",
+          "default_width_cm": 182.88,
+          "default_depth_cm": 60.96,
+          "default_height_cm": 200.66,
+          "min_width_cm": 121.92,
+          "max_width_cm": 243.84,
+          "color_hex": "#374151",
+          "tags": ["storage"]
+        },
+        {
+          "id": "shoe_rack",
+          "label": "Shoe Rack",
+          "default_width_cm": 91.44,
+          "default_depth_cm": 30.48,
+          "default_height_cm": 91.44,
+          "min_width_cm": 50.8,
+          "max_width_cm": 121.92,
+          "color_hex": "#92400E",
+          "tags": ["storage", "entryway"]
+        },
+        {
+          "id": "coat_rack",
+          "label": "Coat Rack / Hall Tree",
+          "default_width_cm": 40.64,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 182.88,
+          "min_width_cm": 30.48,
+          "max_width_cm": 60.96,
+          "color_hex": "#92400E",
+          "tags": ["storage", "entryway"]
+        },
+        {
+          "id": "entryway_bench",
+          "label": "Entryway Bench",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 40.64,
+          "default_height_cm": 50.8,
+          "min_width_cm": 76.2,
+          "max_width_cm": 182.88,
+          "color_hex": "#92400E",
+          "tags": ["seating", "storage", "entryway"]
+        },
+        {
+          "id": "console_table",
+          "label": "Console Table",
+          "default_width_cm": 121.92,
+          "default_depth_cm": 35.56,
+          "default_height_cm": 83.82,
+          "min_width_cm": 76.2,
+          "max_width_cm": 182.88,
+          "color_hex": "#92400E",
+          "tags": ["table", "entryway", "storage"]
+        }
+      ]
+    }
+  ]
+}
