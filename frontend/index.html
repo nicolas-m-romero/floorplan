@@ -7,6 +7,24 @@
     <meta name="description" content="FloorCraft — Free, open-source 2D/3D floor plan room layout tool" />
     <title>FloorCraft</title>
 
+    <!-- Theme: set before paint to avoid a flash. Defaults to system preference. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('floorcraft-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: light)').matches
+                ? 'light'
+                : 'dark';
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

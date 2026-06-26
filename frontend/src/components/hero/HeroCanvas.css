@@ -1,0 +1,14 @@
+/* frontend/src/components/hero/HeroCanvas.css */
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  /* Above the wordmark (z-index 2) so the model overlaps the letters; the
+     canvas is transparent except where the model is drawn. */
+  z-index: 3;
+}
+
+.hero-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,6 +1,9 @@
 /* frontend/src/styles/tokens.css */
 
 :root {
+  /* Dark is the default theme. Light overrides live in [data-theme="light"]. */
+  color-scheme: dark;
+
   /* ── Color: Grounds ── */
   --color-ground:        #0E0E0E;
   --color-surface:       #161616;
@@ -90,4 +93,28 @@
   /* ── App shell dimensions ── */
   --topbar-height:  56px;
   --sidebar-width:  300px;
+}
+
+/* ── Light theme ──
+   Inverts grounds and type for legibility; accent is darkened slightly so it
+   keeps sufficient contrast against the light surfaces. */
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --color-ground:        #F4F1EC;
+  --color-surface:       #FFFFFF;
+  --color-border:        #DCD7CE;
+  --color-border-strong: #B6B0A4;
+
+  --color-text-primary:   #16140F;
+  --color-text-secondary: #5A564E;
+  --color-text-muted:     #8E897E;
+
+  --color-accent:      #2F62B5;
+  --color-accent-dim:  #DCE6F6;
+  --color-accent-glow: rgba(47, 98, 181, 0.12);
+
+  --color-success: #2E6B4F;
+  --color-warning: #8A6320;
+  --color-error:   #A33A3A;
 }

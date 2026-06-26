@@ -13,6 +13,14 @@ body {
   background-color: var(--color-ground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* Light mode: grayscale antialiasing keeps dark-on-light text from looking
+   too thin and washed out, preserving legibility. */
+:root[data-theme='light'] body {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 #root {
