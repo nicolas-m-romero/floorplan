@@ -1,0 +1,117 @@
+/* frontend/src/components/properties/PropertiesPanel.css */
+
+.properties-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.properties-panel--empty {
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+}
+
+.properties-panel__hint {
+  font-size: var(--type-body-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.properties-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.properties-panel__name {
+  font-size: var(--type-body-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.properties-panel__section {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.properties-panel__section-title {
+  font-size: var(--type-body-xs);
+  font-weight: 500;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.properties-panel__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.properties-panel__row-label {
+  font-size: var(--type-body-xs);
+  color: var(--color-text-secondary);
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.properties-panel__display {
+  font-family: var(--font-mono);
+  font-size: var(--type-mono-sm);
+  color: var(--color-text-primary);
+  min-width: 60px;
+}
+
+.properties-panel__mono {
+  font-family: var(--font-mono);
+  font-size: var(--type-mono-sm);
+  color: var(--color-text-secondary);
+}
+
+.properties-panel__dim-input {
+  font-family: var(--font-mono);
+  font-size: var(--type-mono-sm);
+  color: var(--color-text-primary);
+  background: var(--color-ground);
+  border: 1px solid var(--color-border);
+  padding: var(--space-1) var(--space-2);
+  width: 64px;
+  outline: none;
+  text-align: right;
+  transition: border-color 120ms ease;
+}
+
+.properties-panel__dim-input:focus {
+  border-color: var(--color-accent);
+}
+
+.properties-panel__unit {
+  font-size: var(--type-body-xs);
+  color: var(--color-text-muted);
+}
+
+.properties-panel__swatch {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-border-strong);
+  flex-shrink: 0;
+}
+
+.properties-panel__color-input {
+  width: 32px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  background: none;
+  cursor: pointer;
+}

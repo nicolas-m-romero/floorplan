@@ -1,0 +1,81 @@
+/* frontend/src/components/upload/CalibrationTool.css */
+
+.calibration-tool {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.calibration-tool__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.calibration-tool__title {
+  font-family: var(--font-display);
+  font-size: var(--type-display-md);
+  color: var(--color-text-primary);
+  line-height: var(--lh-display);
+}
+
+.calibration-tool__desc {
+  font-size: var(--type-body-sm);
+  color: var(--color-text-secondary);
+}
+
+.calibration-tool__actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.calibration-tool__canvas-wrap {
+  position: relative;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.calibration-tool__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.calibration-tool__img--active {
+  cursor: crosshair;
+}
+
+.calibration-tool__line {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.calibration-tool__dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.calibration-tool__dot--1 {
+  background: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+}
+
+.calibration-tool__dot--2 {
+  background: var(--color-text-primary);
+  box-shadow: 0 0 0 3px rgba(240, 237, 232, 0.2);
+}
+
+.calibration-tool__distance-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}

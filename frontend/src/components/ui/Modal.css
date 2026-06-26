@@ -1,0 +1,55 @@
+/* frontend/src/components/ui/Modal.css */
+
+.modal {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 0;
+  padding: 0;
+  max-height: 90svh;
+  overflow-y: auto;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.modal__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6) var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modal__title {
+  font-family: var(--font-body);
+  font-size: var(--type-body-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  transition: color 120ms ease;
+}
+
+.modal__close:hover {
+  color: var(--color-text-primary);
+}
+
+.modal__body {
+  padding: var(--space-8);
+}

@@ -293,9 +293,9 @@ This is the design's thesis statement. It takes visual cues from all three refer
 ┌─────────────────────────────────────────────────────────┐
 │  [nav — transparent, white text]                        │
 │                                                         │
-│  FLOOR                                                  │
-│  ──────── [3D floor plan model, centered] ──────────   │
-│  CRAFT                                                  │
+│  FLOORCRAFT                                             │
+│  ──────── [3D floor plan model, centered] ──────────    │
+│                                                         │
 │                                                         │
 │  [eyebrow: PLAN YOUR SPACE]                             │
 │  [one-line descriptor: 14–16px Inter]                   │

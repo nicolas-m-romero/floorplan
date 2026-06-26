@@ -1,0 +1,81 @@
+/* frontend/src/pages/Login.css */
+
+.login-page {
+  min-height: 100svh;
+  background: var(--color-ground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.login-logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  letter-spacing: var(--ls-display);
+  text-decoration: none;
+}
+
+.login-title {
+  font-family: var(--font-display);
+  font-size: var(--type-display-md);
+  color: var(--color-text-primary);
+  line-height: var(--lh-display);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--type-body-xs);
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.login-switch {
+  font-size: var(--type-body-sm);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.login-link {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.login-success {
+  font-size: var(--type-body-sm);
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+  padding: var(--space-3) var(--space-4);
+}

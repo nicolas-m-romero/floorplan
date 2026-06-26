@@ -1,0 +1,17 @@
+# backend/requirements.txt
+# Phase 1 — torch is excluded to stay within Render free-tier container limits.
+# Uncomment the torch line when enabling Phase 2 (CubiCasa5K).
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+supabase>=2.4.0
+python-jose[cryptography]>=3.3.0
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
+pdf2image>=1.17.0
+Pillow>=10.3.0
+python-dotenv>=1.0.0
+
+# Phase 2 only:
+# torch>=2.2.0

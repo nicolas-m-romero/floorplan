@@ -1,0 +1,165 @@
+/* frontend/src/styles/utilities.css */
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--grid-gutter);
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  padding-inline: var(--grid-margin);
+}
+
+/* ── Section rhythm ── */
+.section {
+  padding-block: var(--space-32);
+}
+
+.section + .section {
+  border-top: 1px solid var(--color-border);
+}
+
+.section--flush {
+  padding-block: 0;
+}
+
+/* ── Eyebrow label ── */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--type-body-xs);
+  font-weight: 500;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* ── Divider ── */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+  border: none;
+  margin: 0;
+}
+
+.divider--strong {
+  background: var(--color-border-strong);
+}
+
+/* ── Scroll-reveal ── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms var(--ease-in-out), transform 600ms var(--ease-in-out);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Badge / Status pill ── */
+.badge {
+  font-family: var(--font-body);
+  font-size: var(--type-body-xs);
+  font-weight: 500;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid currentColor;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.badge--accent   { color: var(--color-accent); }
+.badge--muted    { color: var(--color-text-secondary); }
+.badge--success  { color: var(--color-success); }
+.badge--error    { color: var(--color-error); }
+.badge--warning  { color: var(--color-warning); }
+
+/* ── Card ── */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--space-8);
+  transition: border-color 200ms ease;
+}
+
+.card:hover {
+  border-color: var(--color-border-strong);
+}
+
+/* ── Dimension label (editor canvas / 3D CSS2D overlay) ── */
+.dimension-label {
+  font-family: var(--font-mono);
+  font-size: var(--type-mono-sm);
+  color: var(--color-text-primary);
+  background: rgba(14, 14, 14, 0.75);
+  border: 1px solid var(--color-border-strong);
+  padding: 2px 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Shake animation (collision rejection) ── */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-3px); }
+  40%       { transform: translateX(3px); }
+  60%       { transform: translateX(-3px); }
+  80%       { transform: translateX(3px); }
+}
+
+.shake {
+  animation: shake 120ms ease-in-out;
+}
+
+/* ── Snap indicator flash ── */
+@keyframes snap-flash {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ── Utilities ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

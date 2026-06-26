@@ -1,0 +1,77 @@
+/* frontend/src/components/rooms/RoomChecklist.css */
+
+.room-checklist {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.room-checklist__hint {
+  font-size: var(--type-body-xs);
+  color: var(--color-text-muted);
+}
+
+.room-checklist__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.room-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.room-item:hover {
+  border-color: var(--color-border);
+  background: rgba(255,255,255,0.03);
+}
+
+.room-item--active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-glow);
+}
+
+.room-item__checkbox {
+  accent-color: var(--color-accent);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.room-item__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.room-item__label {
+  font-size: var(--type-body-sm);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.room-item__type {
+  font-size: var(--type-body-xs);
+  color: var(--color-text-muted);
+  text-transform: capitalize;
+}
+
+.room-item__dims {
+  font-family: var(--font-mono);
+  font-size: var(--type-mono-sm);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
